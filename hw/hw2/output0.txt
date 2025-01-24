@@ -1,0 +1,5 @@
+Your driver Edward has canceled the ride request. We will now find a new driver
+Ride requested for rider Angela, looking for a Standard vechicle.
+Pick Up Location: The_Met_Cloisters, Drop Off Location: Brooklyn_Navy_Yard.
+We have found the closest driver Robert(3.2) for you.
+Robert is now 2.1 miles away from you.

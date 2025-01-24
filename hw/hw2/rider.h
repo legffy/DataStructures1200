@@ -6,14 +6,23 @@
 #include <vector>
 #include <iostream>
 
+/*
+Header of Rider Class
+
+Responsible for creating the individual data when it comes to identifying different riders in taxi situation.
+Randy Taylor
+1/23/25
+*/
 class Rider{
     public:
+    // CONSTRUCTORS
         Rider();
         Rider(std::string aFirstName, std::string aLastName, std::string aGender, int aAge, std::string aPhoneNumber, double aRating, 
                 std::string aPickUpLocation, double aLatitudePickUp, double aLongitudePickUp, std::string aDropOffLocation,
                 double aLatitudeDropOff, double aLongitudeDropOff,std::string aVechiclePrefermce, std::string aState, 
                 std::string aDriverFirstName,std::string aDriverLastName, std::string aDriverPhoneNumber);
-    //ACCESSORS
+        Rider(std::string aNotFoundNumber);
+    // ACCESSORS
         std::string getFirstName() const;
         std::string getLastName() const;
         std::string getGender() const;
@@ -69,7 +78,6 @@ class Rider{
         std::string driverLastName;
         std::string driverPhoneNumber;
 };
-//NON-MEMBER FUNCTION
-bool numberExists(std::string);
-
+//NON-MEMBER FUNCTIONS
+std::ostream& operator<<(std::ostream& os, const Rider& rider);
 #endif

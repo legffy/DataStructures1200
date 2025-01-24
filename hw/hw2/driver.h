@@ -5,13 +5,22 @@
 #include <string>
 #include <vector>
 #include <iostream>
+/*
+Header of Driver Class
+
+Responsible for creating the individual data when it comes to identifying different drivers in a taxi situation.
+Randy Taylor
+1/23/25
+*/
 
 class Driver{
+// CONSTRUCTORS
     public:
         Driver();
         Driver(std::string aFirstName, std::string aLastName, std::string aGender, int aAge, std::string aPhoneNumber, double aRating,
                 double aLatitude, double aLongitude, std::string aVechicleType, std::string aState, std::string aRiderFirstName,
                 std::string aRiderLastName, std::string aRiderPhoneNumber);
+        Driver(std::string aNotFoundNumber);
     //ACCESSORS
         std::string getFirstName() const;
         std::string getLastName() const;
@@ -61,4 +70,5 @@ class Driver{
 };
 //NON-MEMBER FUNCTIONS
 bool numberExists(std::string);
+std::ostream& operator<<(std::ostream& os, const Driver& driver);
 #endif
